@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src = "https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+    <a-scene id = 'scene'>
+        <a-assets>
+            <a-asset-item id = "bg" src = "./bg.jpg"></a-asset-item>
+            <audio id = "music" src = "firework-show-short-64657.mp3"></audio>
+        </a-assets>
+        <a-sky color = "#000000" ></a-sky>
+
+        <a-entity id = "sound1" sound="src : #music;poolSize:2;autoplay:true;volume:2;loop:true;"></a-entity>
+        <!--particle 1-->
+        <a-entity>
+            <a-entity position = "40 -20 0" spe-particles = "
+            color:#008080,#FF1493,#7FFFD4,#2E8B57,#FA8072,#800000;
+            particle-count: 150; 
+            max-age: 10.5; 
+            max-age-spread: 0.4; 
+            velocity: 0 15 0; 
+            velocity-spread: 0 5 0; 
+            wiggle: 1 0 1; 
+            wiggle-spread: 5 0 5; 
+            emitter-scale: 70; 
+            size-spread: 1; 
+            randomize-velocity: true;">
+         </a-entity>
+         <a-entity position = "41 -20 0" spe-particles = "
+         color:#FF1493,#7FFFD4,#2E8B57,#FA8072,#800000;
+         particle-count: 150; 
+         max-age: 10.5; 
+         max-age-spread: 0.4; 
+         velocity: 0 15 0; 
+         velocity-spread: 0 5 0; 
+         wiggle: 1 0 1; 
+         wiggle-spread: 5 0 5; 
+         emitter-scale: 70; 
+         size-spread: 1; 
+         randomize-velocity: true;">
+      </a-entity>
+      <a-entity position = "42 -20 0" spe-particles = "
+      color:#7FFFD4,#2E8B57,#FA8072,#800000;
+      particle-count: 150; 
+      max-age: 10.5; 
+      max-age-spread: 0.4; 
+      velocity: 0 15 0; 
+      velocity-spread: 0 5 0; 
+      wiggle: 1 0 1; 
+      wiggle-spread: 5 0 5; 
+      emitter-scale: 70; 
+      size-spread: 1; 
+      randomize-velocity: true;">
+     </a-entity>
+     <a-entity position = "43 -20 0" spe-particles = "
+     color:#2E8B57,#FA8072,#800000;
+     particle-count: 150; 
+     max-age: 10.5; 
+     max-age-spread: 0.4; 
+     velocity: 0 15 0; 
+     velocity-spread: 0 5 0; 
+     wiggle: 1 0 1; 
+     wiggle-spread: 5 0 5; 
+     emitter-scale: 70; 
+     size-spread: 1; 
+     randomize-velocity: true;">
+     </a-entity>
+     <a-entity position = "44 -20 0" spe-particles = "
+     color:#FA8072,#800000;
+     particle-count: 150; 
+     max-age: 10.5; 
+     max-age-spread: 0.4; 
+     velocity: 0 15 0; 
+     velocity-spread: 0 5 0; 
+     wiggle: 1 0 1; 
+     wiggle-spread: 5 0 5; 
+     emitter-scale: 70; 
+     size-spread: 1; 
+     randomize-velocity: true;">
+     </a-entity>
+     <a-entity position = "45 -20 0" spe-particles = "
+     color:#800000;
+     particle-count: 150; 
+     max-age: 10.5; 
+     max-age-spread: 0.4; 
+     velocity: 0 15 0; 
+     velocity-spread: 0 5 0; 
+     wiggle: 1 0 1; 
+     wiggle-spread: 5 0 5; 
+     emitter-scale: 70; 
+     size-spread: 1; 
+     randomize-velocity: true;">
+     </a-entity>
+        </a-entity>
+    
+        <!--particle 2-->
+        <a-entity position = "-85 0 0">
+            <a-entity position = "40 -20 0" spe-particles = "
+            color:#008080;
+            particle-count: 150; 
+            max-age: 10.5; 
+            max-age-spread: 0.4; 
+            velocity: 0 15 0; 
+            velocity-spread: 0 5 0; 
+            wiggle: 1 0 1; 
+            wiggle-spread: 5 0 5; 
+            emitter-scale: 70; 
+            size-spread: 1; 
+            randomize-velocity: true;">
+         </a-entity>
+         <a-entity position = "41 -20 0" spe-particles = "
+         color:#FF1493,#7FFFD4,#2E8B57,#FA8072,#800000;
+         particle-count: 150; 
+         max-age: 10.5; 
+         max-age-spread: 0.4; 
+         velocity: 0 15 0; 
+         velocity-spread: 0 5 0; 
+         wiggle: 1 0 1; 
+         wiggle-spread: 5 0 5; 
+         emitter-scale: 70; 
+         size-spread: 1; 
+         randomize-velocity: true;">
+      </a-entity>
+      <a-entity position = "42 -20 0" spe-particles = "
+      color:#7FFFD4,#2E8B57,#FA8072,#800000;
+      particle-count: 150; 
+      max-age: 10.5; 
+      max-age-spread: 0.4; 
+      velocity: 0 15 0; 
+      velocity-spread: 0 5 0; 
+      wiggle: 1 0 1; 
+      wiggle-spread: 5 0 5; 
+      emitter-scale: 70; 
+      size-spread: 1; 
+      randomize-velocity: true;">
+     </a-entity>
+     <a-entity position = "43 -20 0" spe-particles = "
+     color:#2E8B57,#FA8072,#800000;
+     particle-count: 150; 
+     max-age: 10.5; 
+     max-age-spread: 0.4; 
+     velocity: 0 15 0; 
+     velocity-spread: 0 5 0; 
+     wiggle: 1 0 1; 
+     wiggle-spread: 5 0 5; 
+     emitter-scale: 70; 
+     size-spread: 1; 
+     randomize-velocity: true;">
+     </a-entity>
+     <a-entity position = "44 -20 0" spe-particles = "
+     color:#FA8072,#800000;
+     particle-count: 150; 
+     max-age: 10.5; 
+     max-age-spread: 0.4; 
+     velocity: 0 15 0; 
+     velocity-spread: 0 5 0; 
+     wiggle: 1 0 1; 
+     wiggle-spread: 5 0 5; 
+     emitter-scale: 70; 
+     size-spread: 1; 
+     randomize-velocity: true;">
+     </a-entity>
+     <a-entity position = "45 -20 0" spe-particles = "
+     color:#800000;
+     particle-count: 150; 
+     max-age: 10.5; 
+     max-age-spread: 0.4; 
+     velocity: 0 15 0; 
+     velocity-spread: 0 5 0; 
+     wiggle: 1 0 1; 
+     wiggle-spread: 5 0 5; 
+     emitter-scale: 70; 
+     size-spread: 1; 
+     randomize-velocity: true;">
+     </a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "20 1 0" spe-particles = "
+             color: #008080,#FF1493,#7FFFD4,#2E8B57,#FA8072,#800000;
+             velocity:1;
+             velocity-spread:15;
+             randomize-valocity:true;
+             radius:1;
+             particle-count:1000;
+             max-age:2;
+             drag:1;
+             duration:-1;
+             active-multiplier:1000;
+             distribution:sphere;
+             blending:additive;
+             size:1,1,1,0;
+             relative:world;
+             rotation:90
+             ">
+
+            </a-entity>
+
+            <a-entity position = "-20 1 0" spe-particles = "
+             color: #008080,#FF1493,#7FFFD4,#2E8B57,#FA8072,#800000;
+             velocity:1;
+             velocity-spread:15;
+             randomize-valocity:true;
+             radius:1;
+             particle-count:1000;
+             max-age:2;
+             drag:1;
+             duration:-1;
+             active-multiplier:1000;
+             distribution:sphere;
+             blending:additive;
+             size:1,1,1,0;
+             relative:world;
+             rotation:90
+             ">
+
+            </a-entity>
+         
+        </a-entity>
+
+        <a-entity position = "0 1 0" spe-particles = "
+        color: #B8860B;
+        velocity:1;
+        velocity-spread:15;
+        randomize-valocity:true;
+        radius:1;
+        particle-count:1000;
+        max-age:2;
+        drag:1;
+        duration:-1;
+        active-multiplier:2000;
+        distribution:sphere;
+        blending:additive;
+        size:1,1,1,0;
+        relative:world;
+        rotation:40
+        ">
+
+       </a-entity>
+      
+       <a-camera position = "0 0 30"></a-camera>
+    </a-scene>
+   
+</body>
+</html>
